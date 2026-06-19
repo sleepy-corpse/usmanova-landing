@@ -1,0 +1,13 @@
+{
+  "name": "usmanova-landing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "sass scss/main.scss css/main.css --style=compressed",
+    "watch": "sass scss/main.scss css/main.css --watch"
+  },
+  "devDependencies": {
+    "@qpokychuk/gilroy": "^1.0.2",
+    "sass": "^1.89.0"
+  }
+}

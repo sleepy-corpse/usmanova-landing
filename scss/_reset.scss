@@ -1,0 +1,60 @@
+@use 'variables' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font;
+  font-weight: 400;
+  background: $color-white;
+  color: $color-text;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: #abb7bd;
+  color: $color-white;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.desktop-break,
+.mobile-break {
+  display: none;
+}
+
+@media (min-width: $bp-desktop) {
+  .desktop-break {
+    display: block;
+  }
+}
+
+@media (max-width: $bp-mobile-max) {
+  .mobile-break {
+    display: block;
+  }
+}

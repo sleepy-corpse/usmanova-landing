@@ -1,0 +1,57 @@
+$color-white: #ffffff;
+$color-bg-light: #f3f3f3;
+$color-pink: #f66297;
+$color-pink-accent: #ff63ae;
+$color-text: #000000;
+$color-text-muted: #777777;
+$color-text-secondary: #555555;
+$color-footer-text: #878787;
+
+$font: 'Gilroy', sans-serif;
+
+$container: 1170px;
+$content-wide: 585px;
+$content-narrow: 390px;
+$footer-max: 900px;
+$gutter: 15px;
+
+$bp-mobile-max: 1020px;
+$bp-desktop: 1021px;
+
+$section-pad-y: 45px;
+$section-pad-y-lg: 60px;
+$card-radius: 30px;
+$card-padding: 15px;
+
+@mixin btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 100px;
+  background: $color-pink;
+  color: $color-white;
+  font-family: $font;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.92;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+@mixin card {
+  border-radius: $card-radius;
+  background: $color-white;
+  padding: $card-padding;
+}
